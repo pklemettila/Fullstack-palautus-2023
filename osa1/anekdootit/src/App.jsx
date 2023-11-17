@@ -40,10 +40,12 @@ const App = () => {
 
     return (
         <div>
+            <h1>Anecdote of the day</h1>
             {anecdotes[selected]} <br />
             has {votes[selected]} votes <br />
             <Button handleClick={handleClick} text="Next anecdote" />
             <Button handleClick={voteAnecdote} text="Vote" />
+            <h2>Most voted</h2>
             {anecdotes[mostVoted]}
         </div>
     )
